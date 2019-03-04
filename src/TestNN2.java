@@ -21,8 +21,9 @@ public class TestNN2 {
 		
 		RawNN neuralNet = new RawNN(inputNeurons, hiddenLayers, hiddenNeurons, outputNeurons, lr, winSize);
 		
+		// === Uncomment this block to enable loading ===
 		//String name = String.format("VNet_Save_%d_%d_%d_%d", inputNeurons, hiddenLayers, hiddenNeurons, outputNeurons);
-		//boolean worked = neuralNet.loadNet(name);
+		//boolean worked = neuralNet.loadNet("savednets//"+name);
 
 		//if (!worked)
 		//System.out.println("Save for this network model does not exist.");

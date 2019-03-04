@@ -445,10 +445,11 @@ public class RawNN extends JPanel{
 			propagateBackward();
 		}
 		
+		// === Uncomment this block to enable saving === 
 		// if (interval % 100000 == 0)
 		// {
 			// 	String name = String.format("VNet_Save_%d_%d_%d_%d", inputLength, hiddenLayCount, hiddenLength, outputLength);
-			// 	saveNet(name);
+			// 	saveNet("savednets//"+name);
 			// }
 		String text = String.format("LOSS: %.8f  CORRECT: %.2f", (float)(sum/count), ((float)correct/count)*100.0f );
 		lossLabel.setText(text);
